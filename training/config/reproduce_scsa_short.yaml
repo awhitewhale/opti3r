@@ -1,0 +1,15 @@
+defaults:
+  - optir3r_ar_plugins
+  - _self_
+
+exp_name: optir3r_ar
+dpt_plugin_type: scsa
+max_img_per_gpu: 1
+max_epochs: 1
+limit_train_batches: 20
+limit_val_batches: 1
+log_save_dir: reproduce_scsa_short
+data_root: /absolute/path/to/DATA_ROOT
+
+checkpoint:
+  resume_checkpoint_path: /absolute/path/to/wat3r.pt
