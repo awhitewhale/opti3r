@@ -57,7 +57,7 @@ Training outputs are written under the configured `result/` directory. Change `l
 
 ## Run inference without evaluation
 
-`test.py` loads the selected student checkpoint and writes raw model predictions. It does not read ground truth, compute benchmark metrics, align predictions to references, or compare methods.
+`test.py` loads the selected student checkpoint and writes raw model predictions. 
 
 ```bash
 python test.py \
