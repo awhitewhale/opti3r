@@ -38,9 +38,11 @@
         </div>
       </section>
 
-      <section class="teaser container-wide" aria-label="Animated underwater input sequence">
-        <img src="assets/underwater-sequence.webp" alt="Animated Water3D underwater input sequence" />
-        <p><strong>Opti3R</strong> recovers depth, camera poses, and pixel-aligned 3D points from underwater image sequences while learning to preserve geometry under changing attenuation and backscatter.</p>
+      <section class="teaser container-wide" aria-label="Water3D point cloud reconstruction video">
+        <video autoplay muted loop playsinline preload="metadata" aria-label="Fixed-elevation orbit around an Opti3R Water3D reconstruction">
+          <source src="assets/water3d-turntable.mp4" type="video/mp4" />
+        </video>
+        <p><strong>Opti3R</strong> recovers depth, camera poses, and pixel-aligned 3D points from underwater image sequences. This fixed-elevation orbit is rendered directly from a Water3D reconstruction output.</p>
       </section>
 
       <section class="paper-section container text-section" id="abstract">
@@ -62,7 +64,6 @@
         <div class="viewer-shell">
           <canvas id="point-cloud" aria-label="Interactive Opti3R point cloud reconstruction"></canvas>
           <div class="viewer-loading" id="viewer-loading"><span></span> Loading 52,936 points</div>
-          <div class="viewer-label">Water3D / cv_1173</div>
           <button class="viewer-reset" id="viewer-reset" type="button">Reset view</button>
         </div>
       </section>
