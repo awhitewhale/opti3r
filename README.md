@@ -1,5 +1,7 @@
 # Opti3R
 
+[Project page](https://awhitewhale.github.io/opti3r/) · [Interactive 3D reconstruction](https://awhitewhale.github.io/opti3r/#reconstruction)
+
 
 ## Abstract
 
