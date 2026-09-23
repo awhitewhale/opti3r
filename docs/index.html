@@ -15,7 +15,6 @@
       <nav aria-label="Primary navigation">
         <a href="#abstract">Abstract</a>
         <a href="#method">Method</a>
-        <a href="#reconstruction">3D Reconstruction</a>
         <a href="https://github.com/awhitewhale/opti3r">Code</a>
       </nav>
       <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
@@ -31,18 +30,7 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.22c-3.22.7-3.9-1.37-3.9-1.37-.52-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.28-5.27-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.47.11-3.04 0 0 .97-.31 3.16 1.18a10.93 10.93 0 0 1 5.75 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.57.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.71 5.38-5.29 5.67.42.36.79 1.06.79 2.14v3.18c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/></svg>
             Code
           </a>
-          <a class="pill" href="#reconstruction">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 15l9 5 9-5" fill="none"/></svg>
-            Interactive 3D
-          </a>
         </div>
-      </section>
-
-      <section class="teaser container-wide" aria-label="Water3D point cloud reconstruction video">
-        <video autoplay muted loop playsinline preload="metadata" aria-label="Fixed-elevation orbit around an Opti3R Water3D reconstruction">
-          <source src="assets/water3d-turntable.mp4" type="video/mp4" />
-        </video>
-        <p><strong>Opti3R</strong> recovers depth, camera poses, and pixel-aligned 3D points from underwater image sequences. This fixed-elevation orbit is rendered directly from a Water3D reconstruction output.</p>
       </section>
 
       <section class="paper-section container text-section" id="abstract">
@@ -56,16 +44,6 @@
           <img src="assets/paper-method.webp" alt="Opti3R training pipeline with Geometry-Locked Optical Pairing, VCRG supervision, and ACGA" />
           <figcaption><strong>Overview of Opti3R.</strong> The EMA teacher processes a reference image while the student receives a geometry-preserving optical perturbation. GLOP acts on dense geometry, VCRG weights cross-view evidence continuously, and ACGA adapts the depth and point heads.</figcaption>
         </figure>
-      </section>
-
-      <section class="paper-section container-wide" id="reconstruction">
-        <h2>Interactive 3D Reconstruction</h2>
-        <p class="section-intro">A real Water3D reconstruction produced by the project. Drag to rotate the point cloud and scroll to zoom.</p>
-        <div class="viewer-shell">
-          <canvas id="point-cloud" aria-label="Interactive Opti3R point cloud reconstruction"></canvas>
-          <div class="viewer-loading" id="viewer-loading"><span></span> Loading 52,936 points</div>
-          <button class="viewer-reset" id="viewer-reset" type="button">Reset view</button>
-        </div>
       </section>
 
       <section class="paper-section container-wide">
